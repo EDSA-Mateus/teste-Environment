@@ -4,6 +4,10 @@ on:
   push:
     branches: [main]
 
+concurrency:
+  group: pipeline-prod
+  cancel-in-progress: true
+
 jobs:
   run-dev:
     runs-on: ubuntu-latest
