@@ -12,4 +12,4 @@ import os
 # comment
 def test_env_variable():
     os.environ.get("CALCULATOR_MULTIPLIER")
-    assert calculate("CALCULATOR_MULTIPLIER", "CALCULATOR_MULTIPLIER") == "6"
+    assert calculate("CALCULATOR_MULTIPLIER", "CALCULATOR_MULTIPLIER") == 6
