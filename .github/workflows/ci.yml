@@ -4,6 +4,10 @@ on:
   pull_request:
     branches: [main]
 
+
+env:
+  CALCULATOR_MULTIPLIER: ${{ secrets.CALCULATOR_MULTIPLIER }}
+
 jobs:
   test:
     runs-on: ubuntu-latest
