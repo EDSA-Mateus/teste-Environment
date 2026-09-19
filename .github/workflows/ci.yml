@@ -5,12 +5,12 @@ on:
     branches: [main]
 
 
-env:
-  CALCULATOR_MULTIPLIER: ${{ secrets.CALCULATOR_MULTIPLIER }}
-
 jobs:
   test:
     runs-on: ubuntu-latest
+    environment: development
+    env:
+      CALCULATOR_MULTIPLIER: ${{ secrets.CALCULATOR_MULTIPLIER }}
     steps:
       - uses: actions/checkout@v4
 
