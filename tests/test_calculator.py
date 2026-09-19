@@ -11,5 +11,6 @@ def test_calculate_with_multiplier():
 import os
 # comment
 def test_env_variable():
-    add_variable = float(os.environ.get("CALCULATOR_MULTIPLIER"))
+    print(os.environ.get('CALCULATOR_MULTIPLIER'))
+    add_variable = float(os.environ.get('CALCULATOR_MULTIPLIER'))
     assert calculate(add_variable, add_variable) == 6
